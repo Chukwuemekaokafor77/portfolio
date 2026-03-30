@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     tags: ['FastAPI', 'React Native', 'PostgreSQL', 'Redis', 'Python', 'Expo'],
     category: 'saas',
     github: 'https://github.com/Chukwuemekaokafor77/elderly-care',
-    live: 'https://app.eldercare-companion.com/login',
+    live: 'https://elderly-care-zeta.vercel.app/login',
     highlights: [
       '537 backend + 379 frontend tests',
       'PIPEDA compliant (PHI encryption)',
@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
     tags: ['Next.js', 'FastAPI', 'PostgreSQL', 'PostGIS', 'Redis', 'Clerk'],
     category: 'saas',
     github: null,
-    live: 'https://web-eight-gamma-54.vercel.app',
+    live: 'https://maplematch-app.vercel.app',
     highlights: [
       '74 real listings (all 13 provinces)',
       'AI matching engine',
