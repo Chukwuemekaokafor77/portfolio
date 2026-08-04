@@ -1,5 +1,7 @@
 'use client';
 
+import { RESUME_URL } from '@/lib/data';
+
 export default function Hero() {
   const keySkills = ['Full-Stack Engineer', 'ML Engineer', 'FastAPI', 'Next.js', 'PostgreSQL', 'Docker'];
 
@@ -85,6 +87,22 @@ export default function Hero() {
             className="px-7 py-3.5 rounded-full border border-violet-600/50 text-violet-300 hover:border-violet-500 hover:text-white hover:bg-violet-900/20 font-semibold transition-all duration-200"
           >
             Get In Touch
+          </a>
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/10 text-gray-300 hover:border-white/25 hover:text-white hover:bg-white/5 font-semibold transition-all duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h5l2 2h7a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+              />
+            </svg>
+            Resume
           </a>
         </div>
 

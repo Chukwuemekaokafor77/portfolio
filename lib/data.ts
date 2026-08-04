@@ -1,5 +1,8 @@
 export const NAV_LINKS = ['About', 'Projects', 'Experience', 'Publications', 'Contact'];
 
+/** Served from /public — update the file in place to publish a new version. */
+export const RESUME_URL = '/Michael_Okafor_Resume.pdf';
+
 export type ProjectCategory = 'all' | 'saas' | 'ml' | 'data';
 
 export interface Project {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { NAV_LINKS } from '@/lib/data';
+import { NAV_LINKS, RESUME_URL } from '@/lib/data';
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -40,6 +40,14 @@ export default function Navbar() {
               {link}
             </button>
           ))}
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-400 hover:text-white transition-colors duration-200 font-medium tracking-wide"
+          >
+            Resume
+          </a>
           <a
             href="#contact"
             onClick={(e) => {
@@ -83,6 +91,15 @@ export default function Navbar() {
                 {link}
               </button>
             ))}
+            <a
+              href={RESUME_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileOpen(false)}
+              className="py-3 px-4 rounded-xl text-gray-300 hover:text-white hover:bg-white/5 transition-all duration-200 font-medium"
+            >
+              Resume
+            </a>
             <button
               onClick={() => handleNavClick('contact')}
               className="mt-2 py-3 px-4 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-500 text-white font-semibold text-center transition-all duration-200"

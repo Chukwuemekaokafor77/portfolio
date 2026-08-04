@@ -1,5 +1,7 @@
 'use client';
 
+import { RESUME_URL } from '@/lib/data';
+
 export default function Contact() {
   const contacts = [
     {
@@ -82,16 +84,24 @@ export default function Contact() {
         </div>
 
         {/* Bottom decorative CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-600 text-sm">
-            Prefer to see my resume first?{' '}
-            <a
-              href="mailto:mikuli2015@gmail.com?subject=Resume%20Request"
-              className="text-violet-400 hover:text-violet-300 underline underline-offset-4 transition-colors"
-            >
-              Request it via email
-            </a>
-          </p>
+        <div className="mt-16 flex flex-col items-center gap-3">
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-violet-700/40 bg-violet-900/10 text-violet-300 hover:border-violet-500 hover:text-white hover:bg-violet-900/25 text-sm font-semibold transition-all duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h5l2 2h7a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+              />
+            </svg>
+            Download Resume (PDF)
+          </a>
+          <p className="text-gray-600 text-sm">Prefer to see my resume first? It&apos;s right there.</p>
         </div>
       </div>
     </section>
